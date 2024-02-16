@@ -4,7 +4,7 @@
       "cover": "https://i.ibb.co/mqwqf5L/1.png",
       "title": "Python Programming",
       "description": "Learn the fundamentals of Python programming language including syntax, data types, control structures, functions, and more.",
-      "price": 99.99,
+      "price": 100,
       "credit": 3
     },
     {
@@ -12,7 +12,7 @@
       "cover": "https://i.ibb.co/pw9k9Ks/2.jpg",
       "title": "Web Development",
       "description": "Master full-stack web development with HTML, CSS, Tailwind, JavaScript, Node.js, Express, MongoDB, Next-JS, Type-script and more.",
-      "price": 149.99,
+      "price": 150,
       "credit": 4
     },
     {
@@ -20,7 +20,7 @@
       "cover": "https://i.ibb.co/p0V5CDH/3.jpg",
       "title": "Data Science",
       "description": "Gain a solid understanding of data science concepts including data analysis, machine learning algorithms, statistical modeling.",
-      "price": 199.99,
+      "price": 200,
       "credit": 5
     },
     {

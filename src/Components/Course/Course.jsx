@@ -22,7 +22,7 @@ const Course = ({ course, handleAddToBookmarks }) => {
 
             </div>
             <div className=''>
-                <button onClick={()=> handleAddToBookmarks(course, credit)} className='w-full text-xl py-2 px-5 bg-blue-500 text-white font-semibold rounded-xl shadow-md hover:bg-blue-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75'>Select</button>
+                <button onClick={()=> handleAddToBookmarks(course, credit, price)} className='w-full text-xl py-2 px-5 bg-blue-500 text-white font-semibold rounded-xl shadow-md hover:bg-blue-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75'>Select</button>
             </div>
         </div>
     );
