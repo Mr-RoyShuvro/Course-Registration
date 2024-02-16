@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import Bookmark from '../Bookmark/Bookmark';
 
-const Bookmarks = ({bookmarks, totalCredit}) => {
+const Bookmarks = ({bookmarks, totalCredit, remainingCredit}) => {
     return (
         <div className="w-1/4 bg-gray-200">
             <div className="mr-14 bg-white rounded-xl p-6">
                 <div className="pb-4 border-b-2">
-                    <h3 className="text-2xl font-bold text-sky-500">Credit Hour Remaining</h3>
+                    <h3 className="text-2xl font-bold text-sky-500">Credit Hour Remaining: {remainingCredit}</h3>
                 </div>
 
 
@@ -32,6 +32,7 @@ const Bookmarks = ({bookmarks, totalCredit}) => {
 
 Bookmarks.propTypes = {
     bookmarks: PropTypes.object.isRequired,
-    totalCredit: PropTypes.number.isRequired
+    totalCredit: PropTypes.number.isRequired,
+    remainingCredit: PropTypes.number.isRequired
 }
 export default Bookmarks;
