@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Bookmark from '../Bookmark/Bookmark';
 
-const Bookmarks = ({bookmarks}) => {
+const Bookmarks = ({bookmarks, totalCredit}) => {
     return (
         <div className="w-1/4 bg-gray-200">
             <div className="mr-14 bg-white rounded-xl p-6">
@@ -18,7 +18,7 @@ const Bookmarks = ({bookmarks}) => {
                     } 
                 </div>
                 <div className="border-b-2 py-4">
-                    <h4 className="text-xl font-medium">Total Credit Hour : 13</h4>
+                    <h4 className="text-xl font-medium">Total Credit Hour : {totalCredit}</h4>
                 </div>
                 <div className="pt-4 pb-6">
                     <h3 className="text-xl font-semibold">Total Price : 48000 USD</h3>
@@ -31,6 +31,7 @@ const Bookmarks = ({bookmarks}) => {
 
 
 Bookmarks.propTypes = {
-    bookmarks: PropTypes.object.isRequired
+    bookmarks: PropTypes.object.isRequired,
+    totalCredit: PropTypes.number.isRequired
 }
 export default Bookmarks;

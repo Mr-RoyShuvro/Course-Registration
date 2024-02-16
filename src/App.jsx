@@ -8,18 +8,24 @@ import Header from './Components/Header/Header'
 
 function App() {
   const [bookmarks, setBookmarks] = useState([]);
+  const [totalCredit, setTotalCredit] = useState(0);
 
-  const handleAddToBookmarks = course =>{
+  const handleTotalCredit = credit => {
+    setTotalCredit(credit + totalCredit);
+  }
+
+  const handleAddToBookmarks = (course, credit) => {
     const newBookmarks = [...bookmarks, course];
     setBookmarks(newBookmarks);
+    handleTotalCredit(credit);
   }
 
   return (
     <>
       <Header></Header>
       <div className='md:flex'>
-        <Courses handleAddToBookmarks ={handleAddToBookmarks}></Courses>
-        <Bookmarks bookmarks={bookmarks}></Bookmarks>
+        <Courses handleAddToBookmarks={handleAddToBookmarks}></Courses>
+        <Bookmarks bookmarks={bookmarks} totalCredit={totalCredit}></Bookmarks>
       </div>
     </>
   )
